@@ -1,0 +1,418 @@
+html body{
+    background: linear-gradient(to bottom, #aeccec, #ffffff);
+    height: 100%;
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    padding-bottom: 80px; /* Space untuk fixed footer */
+    position: relative;
+    min-height: 100vh;
+}
+.header{
+    margin:  15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+.addres p{
+    font-size: 15px;
+}
+.main-hello{
+     margin: 15px;
+}
+.main-hello h2{
+    margin: 0;
+    padding: 5px;
+    font-size: 35px;
+    color: black;
+}
+.main-hello h3{
+    margin: 0;
+    padding: 5px;
+    font-size: 35px;
+    color: rgb(138, 124, 218)
+}
+.main-search{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+.main-search input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.main-search img{
+    padding: 2px;
+}
+.main-menu{
+    margin: 15px 30px;
+    display: flex;
+    /*  */
+    overflow-x: auto; /* Untuk scroll horizontal jika perlu */
+    gap: 5px;
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    overflow-x: auto; /* Untuk scroll horizontal jika perlu */
+    flex-shrink: 0; /* Mencegah event mengecil */
+    margin-right: 5px;
+}
+.bar:last-child {
+    margin-right: 0;
+}
+.bar img{
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    padding: 2px;
+    filter: brightness(0) saturate(100%); 
+}
+.bar p{
+    margin: 2px;
+    padding: 0px;
+}
+.main-upcoming-events{
+    margin: 10px 15px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.main-upcoming-events h2{
+    font-size: 22px;
+}
+.main-upcoming-events p{
+    font-size: 12px;
+    font-weight: 600;
+    color: grey;
+}
+.events{
+    display: flex;
+    margin: 0 15px;
+    overflow-x: auto; /* Scroll horizontal untuk events */
+    gap: 15px;
+    padding-bottom: 10px;
+}
+.container-event{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 200px;
+    padding: 5px 0px;
+    margin-right: 10px;
+    flex-shrink: 0; /* Mencegah event mengecil */
+}
+.container-event img{
+    width: 100%;
+    height: 125px;
+    border-radius: 20px;
+    object-fit:fill;
+    object-position: center;
+}
+.container-event h2{
+    padding-top: 5px;
+    margin: 0;
+    font-size: 15px;
+}
+.container-event h3{
+    padding-top: 5px;
+    margin: 0;
+    font-size: 15px;
+    color: rgb(138, 124, 218)
+}
+.addres-event{
+    display: flex;
+    align-items: center;
+}
+.addres-event img{
+    width: 10px;
+    height: 10px;
+}
+.addres-event p{
+    margin: 5px;
+    font-size: 12px;
+}
+.event-image1, .event-image2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event-image1 {
+    background-image: url('bernadya.jpg');
+}
+.event-image2 {
+    background-image: url('moshing.jpg');
+}
+.date-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 6px 8px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    min-width: 25px;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+.month {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #666;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+footer{
+    padding-top: 10px;
+    display: flex;
+    border-top: 1px solid grey;
+    width: 100%;
+    justify-content: space-evenly;
+}
+footer img{
+    width: 25px;
+    height: 25px;
+    color: gray;
+}
+footer p{
+    font-size: 13px; 
+    margin: 5px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* About Event */
+.about-event-image{
+    /* border: 1px solid red; */
+    background-image: url('moshing.jpg');
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    padding-top: 40px;
+    padding-bottom: 140px;
+}
+.button{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; /* Ini yang membuat lingkaran sempurna */
+    width: 30px;        /* Pastikan width dan height sama */
+    height: 30px;       /* untuk lingkaran sempurna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-button img{
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+}
+.button-save-etc{
+    display: flex;
+    gap: 20px;
+}
+.button-music-festival{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(81, 79, 79, 0.5); /* opacity 50% */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+}
+.button-music-festival img{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); 
+}
+.button-music-festival p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+.button-mf{
+    display: flex;
+    margin: 15px;
+    gap:20px;
+}
+.name-event{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.name-event h2{
+    color: white;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+.event-schadule{
+    display:flex;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+.event-margin{
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.event-schadule img{
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); 
+}
+.event-schadule h3{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+.about-event h3,p{
+    margin: 10px;
+}
+.container-ticket{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 15px;
+    /* border: 1px solid red; */
+    padding: 10px 5px;
+}
+.ticket-box{
+    border: 1px solid rgba(171, 171, 171, 0.5);
+    border-radius: 10px;
+    display: flex;
+    width: 40px;
+    width: 40px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-ticket img{
+    width: 35px;
+    height: 35px;
+}
+.container-ticket h3{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+.container-ticket h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 15px;
+}
+.price{
+    display: flex;
+    padding-left: 10px;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.sold-out{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px solid rgb(222, 216, 216, 0.61);
+    background-color:rgb(222, 216, 216, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+.sold-out p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.ticket-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ticket-number p{
+    padding: 0px 10px;
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.ticket-slae-price{
+    display: flex;
+}
+.ticket-box{
+    border: 1px solid rgb(222, 216, 216, 0.61);
+    padding: 1px;
+    background-color: white;
+}
+.buy-ticket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(138, 124, 218);
+    background-color: rgb(138, 124, 218); ;
+    border-radius: 25px;
+    height: 40px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.buy-ticket h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 550;
+}
